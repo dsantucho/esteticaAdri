@@ -1,3 +1,22 @@
+# Tech
+REACT JS project 
+react-router-dom
+SASS
+Firebase
+tailwind
+
+## Tailwind css
+install:
+npm install -D tailwindcss
+npx tailwindcss init
+
+Navbar need install: 
+npm install @headlessui/react
+npm install @heroicons/react
+
+Nota:
+md	768px ': cambiar nav
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

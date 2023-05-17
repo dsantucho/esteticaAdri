@@ -2,7 +2,11 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className='flex mt-96'>Home</div>
+    <div className='flex h-screen'>
+      <div className='m-3 p-3'>
+        Home
+        </div>
+      </div>
   )
 }
 

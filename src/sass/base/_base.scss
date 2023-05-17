@@ -3,3 +3,31 @@
     padding  : 0;
     box-sizing: border-box;
 }
+
+body{
+    padding-top: 120px;
+    //min 320px
+    @include mobile-2xs{
+        padding-top: 125px;
+    }
+    //min 480
+    @include mobile-xs{
+        padding-top: 160px;
+    }
+    //min 576
+    @include tablet-sm{
+        padding-top: 180px;
+    }
+    //min 676
+    @include tablet-2sm{
+        padding-top: 200px;
+    }
+    //min 768 y cambia a menu web
+    @include tablet-md{
+        padding-top: 190px;
+    }
+    //min 992
+    @include tablet-lg{
+        padding-top: 190px;
+    }
+}

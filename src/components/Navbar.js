@@ -15,8 +15,8 @@ export default function Navbar() {
     ]
     let [open, setOpen] = useState(false);
     return (
-        <div className='shadow-md w-full fixed top-0 left-0'>
-            <div className='flex justify-between bg-background pb-4 md:inline '>
+        <div className='shadow-md w-full fixed top-0 left-0  bg-background '>
+            <div className='flex justify-between pb-4 md:inline '>
                 <div className='flex justify-center'>
                     <img src={navMobileLogo} className='object-contain p-2 my-2 flex w-10/12 md:w-96'></img>
                 </div>
@@ -24,7 +24,7 @@ export default function Navbar() {
                     <ion-icon name={open ? 'close' : 'menu'}></ion-icon>
                 </div>
 
-                <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:justify-around pl-9 md:pl-0 transition-all duration-500 ease-in ${open ? 'top-32' : 'top-[-490px] borderNav'} `}>
+                <ul className={`md:h-12 md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:justify-around pl-9 md:pl-0 transition-none  bg-background ${open ? 'top-32' : 'top-[-490px] borderNav'} ${open ? '': 'borderNav'}`}>
                     {
                         navigation.map((navigation) => (
                             <li key={navigation.name} className='md:ml-8 text-xl md:my-0 my-7'>
@@ -32,6 +32,7 @@ export default function Navbar() {
                             </li>
                         ))
                     }
+                    <li className="text-2xl pt-1.5"><ion-icon name="logo-instagram" ></ion-icon></li>
                 </ul>
             </div>
         </div>

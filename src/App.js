@@ -4,12 +4,11 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <div>
-      <header>
+    <div> 
+      <header className=" bg-background">
         <Navbar/>
-        <Home/>
       </header>
-
+        <Home/>
     </div>
   );
 }

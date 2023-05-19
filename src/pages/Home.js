@@ -1,12 +1,13 @@
 import React from 'react'
 
+//components
+import BannerHeader from '../components/BannerHeader';
+
 const Home = () => {
   return (
-    <div className='flex h-screen'>
-      <div className='m-3 p-3'>
-        Home
-        </div>
-      </div>
+    <div className='flex w-screen bg-background'>
+        <BannerHeader/>    
+    </div>
   )
 }
 

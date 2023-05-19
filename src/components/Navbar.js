@@ -15,7 +15,7 @@ export default function Navbar() {
     ]
     let [open, setOpen] = useState(false);
     return (
-        <div className='shadow-md w-full fixed top-0 left-0  bg-background '>
+        <div className='shadow-md w-full fixed top-0 left-0  bg-background z-50'>
             <div className='flex justify-between pb-4 md:inline '>
                 <div className='flex justify-center'>
                     <img src={navMobileLogo} className='object-contain p-2 my-2 flex w-10/12 md:w-96'></img>

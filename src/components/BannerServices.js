@@ -13,8 +13,8 @@ const BannerServices = () => {
 
 
   return (
-    <div className='flex-auto min-w-full'>
-        <h2 className='banner-services-h2 p-6 text-center text-3xl leading-8 tracking-wider text-typo-color'>Descubrí nuestros servicios</h2>
+    <div className='flex-auto min-w-full my-5'>
+        <h2 className='banner-services-h2 p-5 text-center text-3xl leading-8 tracking-wider text-typo-color'>Descubrí nuestros servicios</h2>
         <div className='flex flex-col items-center'>
             {
                 services.map((services) => (

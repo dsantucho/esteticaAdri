@@ -10,7 +10,7 @@ const BannerTreatments = () => {
 
 
   return (
-    <div className='flex-auto min-w-full my-5'>
+    <div className='flex flex-col min-w-full my-5 items-center '>
         <h2 className='banner-services-h2 p-5 text-center text-3xl leading-8 tracking-wider text-typo-color'>Los tratamientos estéticos más efectivos con nuestras 3 máquinas favoritas</h2>
         <div className='flex flex-col items-center'>
             {
@@ -18,6 +18,9 @@ const BannerTreatments = () => {
                     <TreatmentsCard data = {treatment} key={treatment.name}/>
                 ))
             }
+        </div>
+        <div className='flex w-64 h-16 text-center bg-btn-background justify-around' >
+                <button className='text-2xl uppercase text-sc-typo-color'>Contactanos <ion-icon name="logo-whatsapp"></ion-icon></button>
         </div>
     </div>
   )

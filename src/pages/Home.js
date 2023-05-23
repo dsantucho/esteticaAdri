@@ -5,6 +5,7 @@ import BannerHeader from '../components/BannerHeader';
 import BannerServices from '../components/BannerServices';
 import BannerProducts from '../components/BannerProducts';
 import BannerTreatments from '../components/BannerTreatments';
+import BannerAbout from '../components/BannerAbout';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <BannerServices/>  
         <BannerProducts/>
         <BannerTreatments/>
+        <BannerAbout/>
     </div>
   )
 }

@@ -4,6 +4,7 @@ import React from 'react'
 import BannerHeader from '../components/BannerHeader';
 import BannerServices from '../components/BannerServices';
 import BannerProducts from '../components/BannerProducts';
+import BannerTreatments from '../components/BannerTreatments';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         <BannerHeader/>  
         <BannerServices/>  
         <BannerProducts/>
+        <BannerTreatments/>
     </div>
   )
 }

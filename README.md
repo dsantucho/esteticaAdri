@@ -17,6 +17,10 @@ npm install @heroicons/react
 Nota:
 md	768px ': cambiar nav
 
+# Mapa
+leaflet
+react-leaflet
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

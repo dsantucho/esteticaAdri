@@ -17,6 +17,7 @@ module.exports = {
         'sc-typo-color': '#0D0D0D',
         'bkg-footer': '#160601',
         'typo-logo-color': '#ACA7A3',
+        'wp-color':'#25D366',
       },
     },
     plugins: [],

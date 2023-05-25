@@ -19,7 +19,7 @@ const icon = L.icon({
 });
 const BannerContact = () => {
   return (
-    <div className=' bg-sc-background flex flex-col items-center my-4'>
+    <div className=' bg-sc-background flex flex-col items-center mt-4'>
         <div className='w-[340px]'>
             <h2 className='typo-pathway text-3xl font-normal leading-10 tracking-widest my-4 text-typo-color'>Contacto</h2>
             <div className='flex'>

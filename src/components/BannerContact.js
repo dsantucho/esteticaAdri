@@ -41,7 +41,7 @@ const BannerContact = () => {
                     <p className='font-light text-sm'>Montevideo, Carrasco, Calle 12345</p>
                 </div>
             </div>
-            <div className='my-5'>
+            <div className='my-5 relative z-0'>
                 <MapContainer center={position} zoom={16} scrollWheelZoom={false} style={{ height: 400 }}>
                     <TileLayer
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

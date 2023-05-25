@@ -21,6 +21,13 @@ md	768px ': cambiar nav
 leaflet
 react-leaflet
 
+# Formulario
+npm i formik
+npm i @mui/material
+npm i yup
+npm i react-bootstrap
+npm i @emotion/react
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

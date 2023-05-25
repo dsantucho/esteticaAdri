@@ -8,6 +8,7 @@ import BannerTreatments from '../components/BannerTreatments';
 import BannerAbout from '../components/BannerAbout';
 import BannerContact from '../components/BannerContact';
 import BannerFooter from '../components/BannerFooter';
+import Copyright from '../components/Copyright';
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <BannerAbout/>
         <BannerContact/>
         <BannerFooter/>
+        <Copyright/>
     </div>
   )
 }

@@ -1,11 +1,13 @@
 import React from 'react';
+//map
 import { MapContainer, TileLayer, Marker,useMap, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import "leaflet/dist/leaflet.css";
-
-import iconMarker from 'leaflet/dist/images/marker-icon.png'
-import iconRetina from 'leaflet/dist/images/marker-icon-2x.png'
-import iconShadow from 'leaflet/dist/images/marker-shadow.png'
+import iconMarker from 'leaflet/dist/images/marker-icon.png';
+import iconRetina from 'leaflet/dist/images/marker-icon-2x.png';
+import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+//component
+import ContactFrom from './ContactForm';
 
 const position = [-34.877668, -56.028816];
 
@@ -49,8 +51,9 @@ const BannerContact = () => {
                 </MapContainer>
             </div>
 
-
-            <div>FORM</div>
+            <div>
+                <ContactFrom/>
+            </div>
         </div>
     </div>
   )

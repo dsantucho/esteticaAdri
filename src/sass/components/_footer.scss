@@ -1,0 +1,15 @@
+.footer-background {
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        opacity: 0.6;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/footer%2Ffooter-vec-logo-adri.png?alt=media");
+    }
+}

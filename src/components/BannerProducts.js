@@ -17,7 +17,7 @@ const BannerProducts = () => {
         <div>
             <h2 className=' banner-services-h2 p-6 text-center text-3xl leading-8 tracking-wider text-typo-color lg:hidden'>
             Nuestros productos <br /> &amp; <br /> Tecnologías</h2>
-            <h2 className='banner-services-h2 p-6 text-center text-5xl leading-8 tracking-wider text-typo-color hidden lg:block'>
+            <h2 className='banner-services-h2 p-6 text-center text-5xl leading-8 tracking-wider text-typo-color hidden lg:block lg:text-left'>
           Nuestros productos &amp; Tecnologías
         </h2>
         </div>

@@ -11,8 +11,8 @@ const BannerTreatments = () => {
 
   return (
     <div className='flex flex-col min-w-full my-5 items-center '>
-        <h2 className='banner-services-h2 p-5 text-center text-3xl leading-8 tracking-wider text-typo-color'>Los tratamientos estéticos más efectivos con nuestras 3 máquinas favoritas</h2>
-        <div className='flex flex-col items-center'>
+        <h2 className='banner-services-h2 p-5 text-center text-3xl leading-8 tracking-wider text-typo-color lg:text-5xl lg:text-left'>Los tratamientos estéticos más efectivos con nuestras 3 máquinas favoritas</h2>
+        <div className='flex flex-col items-center lg:flex-row lg:items-start lg:justify-evenly w-full'>
             {
                 treatments.map((treatment) => (
                     <TreatmentsCard data = {treatment} key={treatment.name}/>

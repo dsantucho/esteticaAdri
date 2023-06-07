@@ -32,6 +32,11 @@
         @content;
     }  
 }
+@mixin web-xsm() {
+    @media (min-width:1024px){
+        @content;
+    }  
+}
 @mixin web-sm() {
     @media (min-width:1201px){
         @content;

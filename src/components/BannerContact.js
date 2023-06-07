@@ -20,7 +20,7 @@ const icon = L.icon({
 const BannerContact = () => {
   return (
     <div className=' bg-sc-background flex flex-col items-center mt-4'>
-        <div className='w-[340px]'>
+        <div className='w-[340px] lg:w-3/4'>
             <h2 className='typo-pathway text-3xl font-normal leading-10 tracking-widest my-4 text-typo-color'>Contacto</h2>
             <div className='flex'>
                 <button className='flex flex-col items-center w-64 h-12 text-center bg-black justify-around mb-5 text-3xl text-white'>
@@ -41,19 +41,22 @@ const BannerContact = () => {
                     <p className='font-light text-sm'>Montevideo, Carrasco, Calle 12345</p>
                 </div>
             </div>
-            <div className='my-5 relative z-0'>
-                <MapContainer center={position} zoom={16} scrollWheelZoom={false} style={{ height: 400 }}>
-                    <TileLayer
-                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    />
-                    <Marker position={position} icon={icon}></Marker>
-                </MapContainer>
+            <div className='lg:flex '>
+                <div className='my-5 relative z-0 lg:w-1/2 lg:pr-2'>
+                    <MapContainer center={position} zoom={16} scrollWheelZoom={false} style={{ height: 400 }}>
+                        <TileLayer
+                            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        />
+                        <Marker position={position} icon={icon}></Marker>
+                    </MapContainer>
+                </div>
+
+                <div className='lg:w-1/2 lg:pl-8'>
+                    <ContactFrom/>
+                </div>
             </div>
 
-            <div>
-                <ContactFrom/>
-            </div>
         </div>
     </div>
   )

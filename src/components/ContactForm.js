@@ -21,8 +21,8 @@ const ContactFrom = ({ data }) => {
     console.log(value.name)
   };
   return (
-    <div  className="flex flex-col w-[340px] my-3">
-      <h2 className="typo-pathway text-3xl font-normal leading-10 tracking-widest mt-3 text-typo-color">Dejanos tu mensaje</h2>
+    <div  className="flex flex-col w-[340px] my-3 lg:w-[400px] lg:h-[450px]">
+      <h2 className="typo-pathway text-3xl font-normal leading-10 tracking-widest mt-3 text-typo-color lg:mt-0">Dejanos tu mensaje</h2>
           <Formik
             initialValues={{
               name: "",
@@ -37,8 +37,8 @@ const ContactFrom = ({ data }) => {
           >
             {({values,errors,touched,handleChange,handleSubmit,isValid,dirty,ErrorMessage}) => (
               <form className="" onSubmit={handleSubmit}>
-                <div className="flex flex-col my-3">
-                  <h3 className="font-normal text-lg text-typo-color mt-4">Nombre</h3>
+                <div className="flex flex-col my-3 lg:my-1">
+                  <h3 className="font-normal text-lg text-typo-color mt-4 lg:mt-1">Nombre</h3>
                   <input
                     className="form-style pt-2 pb-1 bg-sc-background"
                     placeholder="Nombre"
@@ -81,9 +81,9 @@ const ContactFrom = ({ data }) => {
                     onChange={handleChange}
                   />
                 </div>
-                <div className='my-3 flex  h-16 text-center bg-btn-background justify-around'>
+                <div className='my-3 flex  h-16 text-center bg-btn-background justify-around lg:h-12'>
                   <button
-                    className="text-2xl uppercase text-sc-typo-color"
+                    className="text-2xl uppercase text-sc-typo-color lg:text-xl"
                     type="submit"
                     disabled={!(isValid && dirty)}>
                     Enviar Mensaje

@@ -1,7 +1,10 @@
 import React from 'react';
 import TreatmentsCard from './TreatmentsCard';
+import { Link } from 'react-router-dom'; 
 
 const BannerTreatments = () => {
+    const phoneNumber = '+59899262217'; 
+    const whatsappUrl = `https://wa.me/${phoneNumber}`;
     const treatments = [
         {name: 'EMSculpt', img:{backgroundImage:'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/treatments%2Fsculptx1.png?alt=media")'}, href: '#', description: 'EMSculpt es un tratamiento único que esculpe su cuerpo disminuyendo la grasa difícil de quemar a la vez que gana masa muscular. Es indoloro, muy eficaz y seguro.'},
         {name: 'Depilacion Laser Diodo', img:{backgroundImage:'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/treatments%2Fdepix1.png?alt=media")'}, href: '#', description:'Nuestro equipo está diseñado tanto para hombres como para mujeres, para abordar cualquier área de preocupación en su cara o cuerpo utilizando la última tecnología láser.'},
@@ -20,7 +23,11 @@ const BannerTreatments = () => {
             }
         </div>
         <div className='flex w-64 h-16 text-center bg-btn-background justify-around' >
-                <button className='text-2xl uppercase text-sc-typo-color'>Contactanos <ion-icon name="logo-whatsapp"></ion-icon></button>
+            <button className='text-2xl uppercase text-sc-typo-color'>
+                <Link to={whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-400 duration-500">
+                    Contactanos <ion-icon name="logo-whatsapp"></ion-icon>
+                </Link>
+            </button>
         </div>
     </div>
   )

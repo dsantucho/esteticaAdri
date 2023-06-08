@@ -1,8 +1,9 @@
 import React from "react";
-//import Img1 from 'https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-banner-header.jpg?alt=media';
-//import Img2 from 'https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-banner-header-2.png?alt=media&token=d49518e5-4f5e-4746-9c98-bda8d6ba47d6';
+import { Link } from 'react-router-dom'; 
 
 const BannerHeader = () => {
+  const phoneNumber = '+59899262217';
+  const whatsappUrl = `https://wa.me/${phoneNumber}`;
   const styleImg2 = {
     backgroundImage:
       'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-banner-header-2.png?alt=media")',
@@ -47,7 +48,9 @@ const BannerHeader = () => {
           </h3>
           <div className="flex w-64 h-16 text-center bg-btn-background justify-around lg:mt-3">
             <button className="text-2xl uppercase text-sc-typo-color">
+              <Link to={whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-400 duration-500">
               Contactanos <ion-icon name="logo-whatsapp"></ion-icon>
+              </Link>
             </button>
           </div>
         </div>

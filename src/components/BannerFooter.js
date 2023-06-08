@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom'; 
 
 const BannerFooter = () => {
+  const phoneNumber = '+59899262217'; 
+  const whatsappUrl = `https://wa.me/${phoneNumber}`;
     const footerImg = {
         backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/footer%2Ffooter-vec-logo-adri.png?alt=media")'
     };
@@ -38,7 +40,7 @@ const BannerFooter = () => {
                       </Link>
                     </div>
                     <div className='flex flex-col items-center  text-center justify-around ml-5 text-3xl text-white'>
-                        <Link to={instagramUrl} target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-400 duration-500">
+                        <Link to={whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-400 duration-500">
                           <ion-icon name="logo-whatsapp"></ion-icon>
                         </Link>
                     </div>

@@ -20,6 +20,8 @@ const icon = L.icon({
 });
 const BannerContact = () => {
     const instagramUrl = 'https://www.instagram.com/adriana_aguilar_esteticista/';
+    const phoneNumber = '+59899262217'; 
+    const whatsappUrl = `https://wa.me/${phoneNumber}`;
   return (
     <div className=' bg-sc-background flex flex-col items-center mt-4'>
         <div className='w-[340px] lg:w-3/4'>
@@ -31,7 +33,9 @@ const BannerContact = () => {
                     </Link>
                 </div>
                 <button className='flex flex-col items-center w-64 h-12 text-center bg-wp-color justify-around mb-5 text-3xl text-white'>
-                    <ion-icon name="logo-whatsapp"></ion-icon>
+                    <Link to={whatsappUrl} target="_blank" rel="noopener noreferrer" className="mt-2 text-gray-800 hover:text-gray-400 duration-500">
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                    </Link>
                 </button>
             </div>
 

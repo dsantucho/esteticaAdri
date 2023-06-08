@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom'; 
 
 const BannerFooter = () => {
     const footerImg = {
         backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/footer%2Ffooter-vec-logo-adri.png?alt=media")'
     };
+    const instagramUrl = 'https://www.instagram.com/adriana_aguilar_esteticista/';
   return (
     <div className='bg-footer-background flex flex-col items-center pt-3 lg:pt-6' >
         <div className='flex flex-col w-[340px] text-footer-typo-color my-4 bg-cover bg-center overflow-hidden opacity-75 footer-background lg:w-3/4 lg:flex-row lg:p-10'>
@@ -30,12 +32,16 @@ const BannerFooter = () => {
               <span className='font-light text-sm tracking-wider my-1'>Whatsapp: +589 94943434</span>
 
                   <div className='flex my-1'>
-                    <button className='flex flex-col items-center text-center justify-around text-3xl text-white'>
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </button>
-                    <button className='flex flex-col items-center  text-center justify-around ml-5 text-3xl text-white'>
-                        <ion-icon name="logo-whatsapp"></ion-icon>
-                    </button>
+                    <div className='flex flex-col items-center text-center justify-around text-3xl text-white'>
+                      <Link to={instagramUrl} target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-400 duration-500">
+                          <ion-icon name="logo-instagram" className='m-0 p-0'></ion-icon>
+                      </Link>
+                    </div>
+                    <div className='flex flex-col items-center  text-center justify-around ml-5 text-3xl text-white'>
+                        <Link to={instagramUrl} target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-400 duration-500">
+                          <ion-icon name="logo-whatsapp"></ion-icon>
+                        </Link>
+                    </div>
                 </div>
 
             </div>

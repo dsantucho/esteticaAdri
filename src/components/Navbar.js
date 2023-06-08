@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; 
 
 //img
 import navMobileLogo from "../img/nav-mobile-logo2.png";
@@ -13,6 +14,10 @@ export default function Navbar() {
         { name: 'Sobre Nosotros', href: '#', current: false },
         { name: 'Contacto', href: '#', current: false },
     ]
+    const instagramUrl = 'https://www.instagram.com/adriana_aguilar_esteticista/';
+    const instagramMobileUrl = 'instagram://user?username=adriana_aguilar_esteticista'; // Instagram app URL scheme
+  
+
     let [open, setOpen] = useState(false);
     return (
         <div className='shadow-md w-full fixed top-0 left-0  bg-background z-50'>
@@ -32,7 +37,14 @@ export default function Navbar() {
                             </li>
                         ))
                     }
-                    <li className="text-2xl pt-1.5"><ion-icon name="logo-instagram" ></ion-icon></li>
+                    {/* <li className="text-2xl pt-1.5"><ion-icon name="logo-instagram" ></ion-icon></li> */}
+                                {/* Use Link component to handle navigation */}
+                    <li className="text-2xl pt-1.5">
+                        <Link to={instagramUrl} target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-400 duration-500">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </Link>
+                    </li>
+
                 </ul>
             </div>
         </div>

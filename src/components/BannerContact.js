@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; 
 //map
 import { MapContainer, TileLayer, Marker,useMap, Popup } from 'react-leaflet';
 import L from 'leaflet';
@@ -18,14 +19,17 @@ const icon = L.icon({
     iconSize: [20,30]
 });
 const BannerContact = () => {
+    const instagramUrl = 'https://www.instagram.com/adriana_aguilar_esteticista/';
   return (
     <div className=' bg-sc-background flex flex-col items-center mt-4'>
         <div className='w-[340px] lg:w-3/4'>
             <h2 className='typo-pathway text-3xl font-normal leading-10 tracking-widest my-4 text-typo-color'>Contacto</h2>
             <div className='flex'>
-                <button className='flex flex-col items-center w-64 h-12 text-center bg-black justify-around mb-5 text-3xl text-white'>
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </button>
+                <div className='flex flex-col items-center w-64 h-12 text-center bg-black justify-around mb-5 text-3xl text-white'>
+                    <Link to={instagramUrl} target="_blank" rel="noopener noreferrer" className="mt-2 text-gray-800 hover:text-gray-400 duration-500">
+                        <ion-icon name="logo-instagram" className='m-0 p-0'></ion-icon>
+                    </Link>
+                </div>
                 <button className='flex flex-col items-center w-64 h-12 text-center bg-wp-color justify-around mb-5 text-3xl text-white'>
                     <ion-icon name="logo-whatsapp"></ion-icon>
                 </button>

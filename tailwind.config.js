@@ -20,6 +20,7 @@ module.exports = {
         'bkg-footer': '#160601',
         'typo-logo-color': '#ACA7A3',
         'wp-color':'#25D366',
+        'btn-services-grey':'#999999',
       },
     },
     plugins: [],

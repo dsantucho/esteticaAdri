@@ -9,10 +9,10 @@ import navMobileLogo from "../img/nav-mobile-logo2.png";
 export default function Navbar() {
     //menu options
     const navigation = [
-        { name: 'Home', href: '#', current: true },
-        { name: 'Servicios', href: '#', current: false },
-        { name: 'Sobre Nosotros', href: '#', current: false },
-        { name: 'Contacto', href: '#', current: false },
+        { name: 'Home', href: '/', current: true },
+        { name: 'Servicios', href: '/services', current: false },
+        { name: 'Sobre Nosotros', href: '/about', current: false },
+        { name: 'Contacto', href: '/contact', current: false },
     ]
     const instagramUrl = 'https://www.instagram.com/adriana_aguilar_esteticista/';
     const instagramMobileUrl = 'instagram://user?username=adriana_aguilar_esteticista'; // Instagram app URL scheme
@@ -33,12 +33,10 @@ export default function Navbar() {
                     {
                         navigation.map((navigation) => (
                             <li key={navigation.name} className='md:ml-8 text-xl md:my-0 my-7'>
-                                <a href={navigation.href} className='text-gray-800 hover:text-gray-400 duration-500'>{navigation.name}</a>
+                                <Link to={navigation.href} className='text-gray-800 hover:text-gray-400 duration-500'>{navigation.name}</Link>
                             </li>
                         ))
                     }
-                    {/* <li className="text-2xl pt-1.5"><ion-icon name="logo-instagram" ></ion-icon></li> */}
-                                {/* Use Link component to handle navigation */}
                     <li className="text-2xl pt-1.5">
                         <Link to={instagramUrl} target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-400 duration-500">
                             <ion-icon name="logo-instagram"></ion-icon>

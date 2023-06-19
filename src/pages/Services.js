@@ -11,6 +11,7 @@ const Services = () => {
           'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-1.jpg?alt=media")',
       },
       href: "#",
+      time: '1hr'
     },
     {
       type: 0,
@@ -20,6 +21,7 @@ const Services = () => {
           'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-2.png?alt=media")',
       },
       href: "#",
+      time: '1hr'
     },
     {
       type: 0,
@@ -29,6 +31,7 @@ const Services = () => {
           'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-3.png?alt=media")',
       },
       href: "#",
+      time: '1hr'
     },
     {
       type: 0,
@@ -38,6 +41,7 @@ const Services = () => {
           'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-4.png?alt=media")',
       },
       href: "#",
+      time: '1hr'
     },
   ];
 
@@ -114,7 +118,7 @@ const Services = () => {
           {selectedTab === 0 &&
             servicesDetail
               .filter((e) => e.type == 0)
-              .map((e) => <CardTreatmentDetail treatmentData={e} />)}
+              .map((e) => <CardTreatmentDetail treatmentData={e} key={e.name} />)}
           {selectedTab === 1 && (
             <div>
               <h2>Depilación</h2>

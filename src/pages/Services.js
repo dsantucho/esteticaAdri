@@ -1,6 +1,46 @@
 import React, { useState } from "react";
+import CardTreatmentDetail from "../components/CardTreatmentDetail";
 
 const Services = () => {
+  const servicesDetail = [
+    {
+      type: 0,
+      name: "Relax",
+      img: {
+        backgroundImage:
+          'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-1.jpg?alt=media")',
+      },
+      href: "#",
+    },
+    {
+      type: 0,
+      name: "Tratamientos Masculinos",
+      img: {
+        backgroundImage:
+          'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-2.png?alt=media")',
+      },
+      href: "#",
+    },
+    {
+      type: 0,
+      name: "Depilación",
+      img: {
+        backgroundImage:
+          'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-3.png?alt=media")',
+      },
+      href: "#",
+    },
+    {
+      type: 0,
+      name: "Tratamientos Corporales",
+      img: {
+        backgroundImage:
+          'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-4.png?alt=media")',
+      },
+      href: "#",
+    },
+  ];
+
   const [selectedTab, setSelectedTab] = useState(0); // Estado para realizar un seguimiento del tab seleccionado
 
   const handleTabClick = (index) => {
@@ -8,6 +48,7 @@ const Services = () => {
       setSelectedTab(index);
     }
   };
+
 
   return (
     <div className="flex flex-col">
@@ -25,7 +66,7 @@ const Services = () => {
       </div>
 
       <div className="flex flex-col bg-sc-background items-center">
-        <nav className="flex w-11/12 text-xl flex-row items-center  text-typo-color justify-around p-4 lg:text-4xl">
+        <nav className="flex w-11/12 text-xl flex-row items-center  text-typo-color justify-around p-4 lg:text-2xl">
           <ion-icon
             name="chevron-back-circle-outline"
             onClick={() => handleTabClick(selectedTab - 1)}
@@ -69,37 +110,25 @@ const Services = () => {
           ></ion-icon>
         </nav>
 
-        <div className="flex flex-col tex-xl text-typo-color p-4 w-11/12 lg:text-4xl ">
-        {selectedTab === 0 && (
-          <div>
+        <div className="flex flex-col tex-xl text-typo-color p-4 w-11/12 lg:text-lg ">
+          {selectedTab === 0 &&
+            servicesDetail
+              .filter((e) => e.type == 0)
+              .map((e) => <CardTreatmentDetail treatmentData={e} />)}
+          {selectedTab === 1 && (
             <div>
-              <h2>Tratamientos 1</h2>
-              <p>Información sobre tratamientos</p>
+              <h2>Depilación</h2>
+              <p>Información sobre depilación</p>
             </div>
+          )}
+          {selectedTab === 2 && (
             <div>
-              <h2>Tratamientos 2</h2>
-              <p>Información sobre tratamientos</p>
+              <h2>Relajación</h2>
+              <p>Información sobre relajación</p>
             </div>
-          </div>
-          
-        )}
-        {selectedTab === 1 && (
-          <div>
-            <h2>Depilación</h2>
-            <p>Información sobre depilación</p>
-          </div>
-        )}
-        {selectedTab === 2 && (
-          <div>
-            <h2>Relajación</h2>
-            <p>Información sobre relajación</p>
-          </div>
-        )}
+          )}
+        </div>
       </div>
-
-      </div>
-
-     
     </div>
   );
 };

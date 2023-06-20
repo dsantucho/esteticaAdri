@@ -21,6 +21,8 @@ module.exports = {
         'typo-logo-color': '#ACA7A3',
         'wp-color':'#25D366',
         'btn-services-grey':'#999999',
+        'tag-hombre':'#1E5ECB',
+        'tag-mujer':'#FFBD82',
       },
     },
     plugins: [],

@@ -10,8 +10,10 @@ const Services = () => {
         backgroundImage:
           'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-1.jpg?alt=media")',
       },
-      href: "#",
-      time: '1hr'
+      time: '1hr',
+      descriptionResume:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      descriptionFull:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante laoreet luctus. Nulla ac neque quis eros iaculis condimentum non eget orci. Quisque hendrerit ligula idconsequat vulputate.',
+      advantage: ''
     },
     {
       type: 0,
@@ -20,8 +22,10 @@ const Services = () => {
         backgroundImage:
           'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-2.png?alt=media")',
       },
-      href: "#",
-      time: '1hr'
+      time: '1hr',
+      descriptionResume:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      descriptionFull:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante laoreet luctus. Nulla ac neque quis eros iaculis condimentum non eget orci. Quisque hendrerit ligula idconsequat vulputate.',
+      advantage: ''
     },
     {
       type: 0,
@@ -30,8 +34,10 @@ const Services = () => {
         backgroundImage:
           'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-3.png?alt=media")',
       },
-      href: "#",
-      time: '1hr'
+      time: '1hr',
+      descriptionResume:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      descriptionFull:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante laoreet luctus. Nulla ac neque quis eros iaculis condimentum non eget orci. Quisque hendrerit ligula idconsequat vulputate.',
+      advantage: ''
     },
     {
       type: 0,
@@ -40,8 +46,10 @@ const Services = () => {
         backgroundImage:
           'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-4.png?alt=media")',
       },
-      href: "#",
-      time: '1hr'
+      time: '1hr',
+      descriptionResume:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      descriptionFull:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante laoreet luctus. Nulla ac neque quis eros iaculis condimentum non eget orci. Quisque hendrerit ligula idconsequat vulputate.',
+      advantage: ''
     },
   ];
 
@@ -114,7 +122,7 @@ const Services = () => {
           ></ion-icon>
         </nav>
 
-        <div className="flex flex-col tex-xl text-typo-color p-4 w-11/12 lg:text-lg ">
+        <div className="flex flex-col items-center text-base text-typo-color p-4 w-11/12 lg:text-lg ">
           {selectedTab === 0 &&
             servicesDetail
               .filter((e) => e.type == 0)

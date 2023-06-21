@@ -8,19 +8,20 @@ const CardTreatmentDetail = ({ treatmentData }) => {
 
   return (
     <div className="flex flex-col max-w-md bg-white rounded-md shadow-md overflow-hidden m-2 lg:max-w-none ">
-      <div className="p-4 min-w-[300px] min-h-[404px]">
+      <div className="p-4 min-w-[300px] min-h-[404px] flex flex-col lg:flex-row lg:min-h-0">
         {/* div imagen */}
         <div
-          className="rounded-md overflow-hidden flex flex-col items-center bg-cover bg-center h-[200px] "
+          className="rounded-md overflow-hidden flex flex-col items-center bg-cover bg-center h-[200px] lg:w-[100%] lg:h-auto lg:mr-4 "
           style={treatmentData.img}
         ></div>
         {/* div de info */}
-        <div>
-          <div className="flex flex-row my-4">
-            <span className="mr-2 bg-typo-color p-2 rounded-lg text-white">
+        <div className="lg:flex lg:flex-col ">
+          {/* tags H/M */}
+          <div className="flex flex-row my-4 lg:mb-4 lg:mt-0">
+            <span className="mr-2 bg-typo-color p-2 rounded-lg text-white text-base text-center align-middle">
               Hombre
             </span>
-            <span className="bg-tag-mujer p-2 rounded-lg text-black">
+            <span className="bg-tag-mujer p-2 rounded-lg text-black text-base text-center align-middle">
               Mujer
             </span>
           </div>
@@ -32,14 +33,18 @@ const CardTreatmentDetail = ({ treatmentData }) => {
               <div className="mt-2 block lg:hidden">
                 <p className="">{treatmentData.descriptionResume}</p>
               </div>
-
-              <div className="mt-2 hidden lg:block">
-                <p>{treatmentData.descriptionFull}</p>
-                <p>
-                  <strong>Beneficios: </strong> {treatmentData.advantage}
-                </p>
+              {/* info > 1024 lg */}
+              <div className=" hidden lg:mt-2 lg:flex lg:flex-row ">
+                <div className=" mr-2">
+                  <p>{treatmentData.descriptionFull}</p>
+                </div>
+                <div className="">
+                  <p>
+                    <strong>Beneficios: </strong> {treatmentData.advantage}
+                  </p>
+                </div>
               </div>
-              <p>
+              <p className="mt-3">
                 <strong>Tiempo Estimado: </strong>
                 {treatmentData.time}
               </p>
@@ -58,7 +63,6 @@ const CardTreatmentDetail = ({ treatmentData }) => {
             </div>
           )}
         </div>
-            
       </div>
       {/* div de boton read more */}
       <div className="px-4 py-2 bg-gray-100 text-end lg:hidden">

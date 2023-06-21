@@ -13,7 +13,7 @@ const Services = () => {
       time: '1hr',
       descriptionResume:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       descriptionFull:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante laoreet luctus. Nulla ac neque quis eros iaculis condimentum non eget orci. Quisque hendrerit ligula idconsequat vulputate.',
-      advantage: ''
+      advantage: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante'
     },
     {
       type: 0,
@@ -25,7 +25,7 @@ const Services = () => {
       time: '1hr',
       descriptionResume:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       descriptionFull:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante laoreet luctus. Nulla ac neque quis eros iaculis condimentum non eget orci. Quisque hendrerit ligula idconsequat vulputate.',
-      advantage: ''
+      advantage: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante'
     },
     {
       type: 0,
@@ -37,7 +37,7 @@ const Services = () => {
       time: '1hr',
       descriptionResume:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       descriptionFull:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante laoreet luctus. Nulla ac neque quis eros iaculis condimentum non eget orci. Quisque hendrerit ligula idconsequat vulputate.',
-      advantage: ''
+      advantage: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante'
     },
     {
       type: 0,
@@ -49,7 +49,7 @@ const Services = () => {
       time: '1hr',
       descriptionResume:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       descriptionFull:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante laoreet luctus. Nulla ac neque quis eros iaculis condimentum non eget orci. Quisque hendrerit ligula idconsequat vulputate.',
-      advantage: ''
+      advantage: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante'
     },
   ];
 

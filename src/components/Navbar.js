@@ -15,15 +15,13 @@ export default function Navbar() {
         { name: 'Contacto', href: '/contact', current: false },
     ]
     const instagramUrl = 'https://www.instagram.com/adriana_aguilar_esteticista/';
-    const instagramMobileUrl = 'instagram://user?username=adriana_aguilar_esteticista'; // Instagram app URL scheme
-  
 
     let [open, setOpen] = useState(false);
     return (
         <div className='shadow-md w-full fixed top-0 left-0  bg-background z-50'>
             <div className='flex justify-between pb-4 md:inline '>
                 <div className='flex justify-center'>
-                    <img src={navMobileLogo} className='object-contain p-2 my-2 flex w-10/12 md:w-96'></img>
+                    <img alt='mobileLogo' src={navMobileLogo} className='object-contain p-2 my-2 flex w-10/12 md:w-96'></img>
                 </div>
                 <div onClick={() => setOpen(!open)} className='text-3xl absolute right-2 top-14 cursor-pointer md:hidden'>
                     <ion-icon name={open ? 'close' : 'menu'}></ion-icon>

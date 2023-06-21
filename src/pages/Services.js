@@ -247,15 +247,15 @@ const Services = () => {
         <div className="flex flex-col items-center text-base text-typo-color p-4 w-11/12 lg:text-lg ">
           {selectedTab === 0 &&
             servicesDetail
-              .filter((e) => e.type == 0)
+              .filter((e) => e.type === 0)
               .map((e) => <CardTreatmentDetail treatmentData={e} key={e.name} />)}
           {selectedTab === 1  &&
             servicesDetail
-              .filter((e) => e.type == 1)
+              .filter((e) => e.type === 1)
               .map((e) => <CardTreatmentDetail treatmentData={e} key={e.name} />)}
           {selectedTab === 2 &&
             servicesDetail
-              .filter((e) => e.type == 2)
+              .filter((e) => e.type === 2)
               .map((e) => <CardTreatmentDetail treatmentData={e} key={e.name} />)}
         </div>
       </div>

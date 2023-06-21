@@ -4,10 +4,7 @@ import { Link } from 'react-router-dom';
 const BannerFooter = () => {
   const phoneNumber = '+59899262217'; 
   const whatsappUrl = `https://wa.me/${phoneNumber}`;
-    const footerImg = {
-        backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/footer%2Ffooter-vec-logo-adri.png?alt=media")'
-    };
-    const instagramUrl = 'https://www.instagram.com/adriana_aguilar_esteticista/';
+  const instagramUrl = 'https://www.instagram.com/adriana_aguilar_esteticista/';
   return (
     <div className='bg-footer-background flex flex-col items-center pt-3 lg:pt-6' >
         <div className='flex flex-col w-[340px] text-footer-typo-color my-4 bg-cover bg-center overflow-hidden opacity-75 footer-background lg:w-3/4 lg:flex-row lg:p-10'>

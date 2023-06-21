@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
 //map
-import { MapContainer, TileLayer, Marker,useMap, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker} from 'react-leaflet';
 import L from 'leaflet';
 import "leaflet/dist/leaflet.css";
 import iconMarker from 'leaflet/dist/images/marker-icon.png';

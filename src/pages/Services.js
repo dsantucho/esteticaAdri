@@ -5,7 +5,7 @@ const Services = () => {
   const servicesDetail = [
     {
       type: 0,
-      name: "Relax",
+      name: "HIFU - Facial & Corporal",
       img: {
         backgroundImage:
           'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-1.jpg?alt=media")',
@@ -17,7 +17,7 @@ const Services = () => {
     },
     {
       type: 0,
-      name: "Tratamientos Masculinos",
+      name: "EMSCULPT Slim Beauty",
       img: {
         backgroundImage:
           'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-2.png?alt=media")',
@@ -29,7 +29,7 @@ const Services = () => {
     },
     {
       type: 0,
-      name: "Depilación",
+      name: "ELECTRODOS",
       img: {
         backgroundImage:
           'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-3.png?alt=media")',
@@ -41,7 +41,129 @@ const Services = () => {
     },
     {
       type: 0,
-      name: "Tratamientos Corporales",
+      name: "Cavitador",
+      img: {
+        backgroundImage:
+          'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-4.png?alt=media")',
+      },
+      time: '1hr',
+      descriptionResume:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      descriptionFull:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante laoreet luctus. Nulla ac neque quis eros iaculis condimentum non eget orci. Quisque hendrerit ligula idconsequat vulputate.',
+      advantage: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante'
+    },
+    {
+      type: 0,
+      name: "PRESOTERAPIA",
+      img: {
+        backgroundImage:
+          'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-4.png?alt=media")',
+      },
+      time: '1hr',
+      descriptionResume:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      descriptionFull:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante laoreet luctus. Nulla ac neque quis eros iaculis condimentum non eget orci. Quisque hendrerit ligula idconsequat vulputate.',
+      advantage: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante'
+    },
+    {
+      type: 0,
+      name: "DRENAJE LINFATICO",
+      img: {
+        backgroundImage:
+          'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-4.png?alt=media")',
+      },
+      time: '1hr',
+      descriptionResume:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      descriptionFull:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante laoreet luctus. Nulla ac neque quis eros iaculis condimentum non eget orci. Quisque hendrerit ligula idconsequat vulputate.',
+      advantage: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante'
+    },
+    {
+      type: 0,
+      name: "EXFOLIACION CORPORAL",
+      img: {
+        backgroundImage:
+          'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-4.png?alt=media")',
+      },
+      time: '1hr',
+      descriptionResume:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      descriptionFull:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante laoreet luctus. Nulla ac neque quis eros iaculis condimentum non eget orci. Quisque hendrerit ligula idconsequat vulputate.',
+      advantage: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante'
+    },
+
+    {
+      type: 1,
+      name: "DEPILACION DEFINITIVA LASER",
+      img: {
+        backgroundImage:
+          'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-4.png?alt=media")',
+      },
+      time: '1hr',
+      descriptionResume:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      descriptionFull:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante laoreet luctus. Nulla ac neque quis eros iaculis condimentum non eget orci. Quisque hendrerit ligula idconsequat vulputate.',
+      advantage: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante'
+    },
+    {
+      type: 1,
+      name: "Depilacion con cera",
+      img: {
+        backgroundImage:
+          'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-4.png?alt=media")',
+      },
+      time: '1hr',
+      descriptionResume:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      descriptionFull:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante laoreet luctus. Nulla ac neque quis eros iaculis condimentum non eget orci. Quisque hendrerit ligula idconsequat vulputate.',
+      advantage: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante'
+    },
+
+    {
+      type: 2,
+      name: "Masajes Terapeuticos",
+      img: {
+        backgroundImage:
+          'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-4.png?alt=media")',
+      },
+      time: '1hr',
+      descriptionResume:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      descriptionFull:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante laoreet luctus. Nulla ac neque quis eros iaculis condimentum non eget orci. Quisque hendrerit ligula idconsequat vulputate.',
+      advantage: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante'
+    },
+    {
+      type: 2,
+      name: "MASAJES DEPORTIVOS",
+      img: {
+        backgroundImage:
+          'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-4.png?alt=media")',
+      },
+      time: '1hr',
+      descriptionResume:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      descriptionFull:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante laoreet luctus. Nulla ac neque quis eros iaculis condimentum non eget orci. Quisque hendrerit ligula idconsequat vulputate.',
+      advantage: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante'
+    },
+    {
+      type: 2,
+      name: "MASAJES REDUCTORES",
+      img: {
+        backgroundImage:
+          'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-4.png?alt=media")',
+      },
+      time: '1hr',
+      descriptionResume:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      descriptionFull:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante laoreet luctus. Nulla ac neque quis eros iaculis condimentum non eget orci. Quisque hendrerit ligula idconsequat vulputate.',
+      advantage: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante'
+    },
+    {
+      type: 2,
+      name: "REFLEXOLOGIA",
+      img: {
+        backgroundImage:
+          'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-4.png?alt=media")',
+      },
+      time: '1hr',
+      descriptionResume:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      descriptionFull:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante laoreet luctus. Nulla ac neque quis eros iaculis condimentum non eget orci. Quisque hendrerit ligula idconsequat vulputate.',
+      advantage: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante'
+    },
+    {
+      type: 2,
+      name: "PIEDRAS CALIENTES",
       img: {
         backgroundImage:
           'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-4.png?alt=media")',
@@ -127,18 +249,14 @@ const Services = () => {
             servicesDetail
               .filter((e) => e.type == 0)
               .map((e) => <CardTreatmentDetail treatmentData={e} key={e.name} />)}
-          {selectedTab === 1 && (
-            <div>
-              <h2>Depilación</h2>
-              <p>Información sobre depilación</p>
-            </div>
-          )}
-          {selectedTab === 2 && (
-            <div>
-              <h2>Relajación</h2>
-              <p>Información sobre relajación</p>
-            </div>
-          )}
+          {selectedTab === 1  &&
+            servicesDetail
+              .filter((e) => e.type == 1)
+              .map((e) => <CardTreatmentDetail treatmentData={e} key={e.name} />)}
+          {selectedTab === 2 &&
+            servicesDetail
+              .filter((e) => e.type == 2)
+              .map((e) => <CardTreatmentDetail treatmentData={e} key={e.name} />)}
         </div>
       </div>
     </div>

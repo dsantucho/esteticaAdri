@@ -177,7 +177,7 @@ const Services = () => {
       advantage: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante'
     },
   ];
-  const { tab } = useContext(ServiceContext);
+  const { tab } = useContext(ServiceContext); //cuando viene de home -> bannerServices
   const [selectedTab, setSelectedTab] = useState(tab || 0); // Estado para realizar un seguimiento del tab seleccionado
 
   const handleTabClick = (index) => {

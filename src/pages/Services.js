@@ -1,5 +1,8 @@
-import React, { useState } from "react";
+import React, { useState,useContext } from "react";
 import CardTreatmentDetail from "../components/CardTreatmentDetail";
+
+//context
+import ServiceContext from "../contexts/ServiceContext";
 
 const Services = () => {
   const servicesDetail = [
@@ -174,8 +177,8 @@ const Services = () => {
       advantage: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante'
     },
   ];
-
-  const [selectedTab, setSelectedTab] = useState(0); // Estado para realizar un seguimiento del tab seleccionado
+  const { tab } = useContext(ServiceContext);
+  const [selectedTab, setSelectedTab] = useState(tab || 0); // Estado para realizar un seguimiento del tab seleccionado
 
   const handleTabClick = (index) => {
     if (index >= 0 && index <= 2) {

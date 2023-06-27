@@ -4,10 +4,10 @@ import ServicesCard from './ServicesCard';
 
 const BannerServices = () => {
     const services = [
-        {name: 'Relax', img:{backgroundImage:'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-1.jpg?alt=media")'}, href: '#'},
-        {name: 'Tratamientos Masculinos', img:{backgroundImage:'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-2.png?alt=media")'}, href: '#'},
-        {name: 'Depilación',img:{backgroundImage:'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-3.png?alt=media")'}, href: '#'},
-        {name: 'Tratamientos Corporales',img:{backgroundImage:'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-4.png?alt=media")'}, href: '#'}
+        {type:2 ,name: 'Relax', img:{backgroundImage:'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-1.jpg?alt=media")'}, href: '#'},
+        {type:0 ,name: 'Tratamientos Masculinos', img:{backgroundImage:'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-2.png?alt=media")'}, href: '#'},
+        {type:1 ,name: 'Depilación',img:{backgroundImage:'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-3.png?alt=media")'}, href: '#'},
+        {type:0 ,name: 'Tratamientos Corporales',img:{backgroundImage:'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/img-services-card-4.png?alt=media")'}, href: '#'}
         
     ]
 

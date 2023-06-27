@@ -10,9 +10,12 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import BannerFooter from './components/BannerFooter';
 import Copyright from './components/Copyright';
+//context
+import {ServiceProvider} from './contexts/ServiceContext'
 
 function App() {
   return (
+    <ServiceProvider>
     <Router>
       <header className=" bg-background">
         <Navbar />
@@ -26,6 +29,7 @@ function App() {
         <Copyright />
       </footer>
     </Router>
+    </ServiceProvider>
   );
 }
 

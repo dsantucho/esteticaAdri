@@ -18,25 +18,25 @@ const About = () => {
         <div className="flex flex-row justify-center">
           {/* mobile */}
           <img
-            className="sm: block md:hidden lg:hidden xl:hidden p-5  w-11/12 mt-4"
+            className="sm: block md:hidden lg:hidden xl:hidden p-5  w-11/12 mt-4 max-h-[360px]"
             src="https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/about%2Fabout-sm.png?alt=media"
             alt="banner"
           />
           {/* tablet  */}
           <img
-            className="sm: hidden md:block lg:hidden xl:hidden p-5  w-11/12 mt-4"
+            className="sm: hidden md:block lg:hidden xl:hidden p-5  w-11/12 mt-4 max-h-[375px]"
             src="https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/about%2Fabout-md.png?alt=media"
             alt="banner"
           />
           {/* web */}
           <img
-            className="sm: hidden md:hidden lg:block xl:hidden p-5  w-11/12 "
+            className="sm: hidden md:hidden lg:block xl:hidden p-5  w-11/12 max-h-[470px]"
             src="https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/about%2Fabout-lg.png?alt=media"
             alt="banner"
           />
           {/* web XL */}
           <img
-            className="sm: hidden md:hidden lg:hidden xl:block p-5 "
+            className="sm: hidden md:hidden lg:hidden xl:block p-5 max-h-[500px]"
             src="https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/about%2Fabout-xl.png?alt=media"
             alt="banner"
           />

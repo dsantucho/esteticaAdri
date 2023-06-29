@@ -23,6 +23,7 @@ module.exports = {
         'btn-services-grey':'#999999',
         'tag-hombre':'#1E5ECB',
         'tag-mujer':'#FFBD82',
+        'nav-typo':'#160601',
       },
     },
     plugins: [],

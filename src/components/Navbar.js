@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 //img
 import navMobileLogo from "../img/nav-mobile-logo2.png";
@@ -7,7 +7,7 @@ import navMobileLogo from "../img/nav-mobile-logo2.png";
 export default function Navbar() {
   //menu options
   const navigation = [
-    { name: "Home", href: "/", current: true },
+    { name: "Home", href: "/", current: false },
     { name: "Servicios", href: "/services", current: false },
     { name: "Sobre Nosotros", href: "/about", current: false },
     { name: "Contacto", href: "/contact", current: false },
@@ -61,7 +61,7 @@ export default function Navbar() {
             <li key={navigation.name} className="md:ml-8 text-xl md:my-0 my-7">
               <Link
                 to={navigation.href}
-                className="text-gray-800 hover:text-gray-400 duration-500"
+                className={`text-nav-typo hover:text-gray-400 duration-500`}
                 onClick={handleLinkClick}
               >
                 {navigation.name}

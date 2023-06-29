@@ -10,6 +10,8 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import BannerFooter from './components/BannerFooter';
 import Copyright from './components/Copyright';
+import About from './pages/About';
+import Contact from './pages/Contact';
 //context
 import {ServiceProvider} from './contexts/ServiceContext'
 
@@ -23,6 +25,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/about" element={<About/>}/>
+        <Route path="/contact" element={<Contact/>}/>
       </Routes>
       <footer>
         <BannerFooter />

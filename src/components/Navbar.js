@@ -47,7 +47,7 @@ export default function Navbar() {
         </div>
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-2 top-14 cursor-pointer md:hidden"
+          className="text-2xl absolute right-2 top-14 cursor-pointer md:hidden"
         >
           <ion-icon name={open ? "close" : "menu"}></ion-icon>
         </div>
@@ -58,7 +58,7 @@ export default function Navbar() {
           } ${open ? "" : "borderNav"}`}
         >
           {navigation.map((navigation) => (
-            <li key={navigation.name} className="md:ml-8 text-xl md:my-0 my-7">
+            <li key={navigation.name} className="md:ml-8 text-base md:my-0 my-7">
               <Link
                 to={navigation.href}
                 className={`text-nav-typo hover:text-gray-400 duration-500`}

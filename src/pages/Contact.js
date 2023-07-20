@@ -1,10 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import BannerContact from "../components/BannerContact";
 
 const Contact = () => {
-  const phoneNumber = "+59899262217";
-  const whatsappUrl = `https://wa.me/${phoneNumber}`;
 
   return (
     <div className=" bg-sc-background flex flex-row justify-center items-center mt-4">

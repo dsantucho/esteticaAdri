@@ -14,8 +14,8 @@ const BannerHeader = () => {
   };
 
   return (
-    <div className="bg-sc-background flex-auto min-w-full lg:h-[500px] lg:items-center lg:flex">
-      <div className="p-9 flex flex-col content-evenly justify-center items-center lg:flex-row-reverse lg:justify-evenly">
+    <div className="bg-sc-background flex-auto min-w-full lg:h-[400px] lg:items-center lg:flex">
+      <div className="p-7 flex flex-col content-evenly justify-center items-center lg:flex-row-reverse lg:justify-evenly">
         <div className="relative h-72 w-80 mx-3 lg:hidden">
           <div
             className="h-[230px] w-[250px] absolute left-0 overflow-hidden flex flex-col items-center bg-cover bg-center   lg:h-[330px] lg:w-[350px]"
@@ -29,7 +29,7 @@ const BannerHeader = () => {
         <div className="lg:w-3/5 lg:h-96 lg:flex lg:items-center lg:justify-evenly hidden sm:hidden md:hidden lg:visible">
 
             <div
-                className=" overflow-hidden flex flex-col items-center bg-cover bg-center h-[400px] w-[290px] mr-6"
+                className=" overflow-hidden flex flex-col items-center bg-cover bg-center h-[350px] w-[250px] mr-6"
                 style={styleImg2}
             ></div>
 
@@ -39,15 +39,15 @@ const BannerHeader = () => {
             ></div>
         </div>
         <div className="flex flex-col items-center lg:w-2/6">
-          <h2 className="banner-header-h2 py-3 text-3xl font-bold leading-9 text-center align-middle text-typo-color lg:text-start">
+          <h2 className="banner-header-h2 py-3 text-2xl font-bold leading-9 text-center align-middle text-typo-color lg:text-start">
             Tenemos nuevos tratamientos para sacar lo mejor de ti!
           </h2>
-          <h3 className="py-2 text-xl antialiased font-light tracking-wide leading-7 text-center align-middle text-sc-typo-color lg:text-start">
+          <h3 className="py-2 text-lg antialiased font-light tracking-wide leading-7 text-center align-middle text-sc-typo-color lg:text-start lg:text-xl">
             Encuentra la promoción perfecta para ti, contactanos y conoce como
             sacar tu mejor version
           </h3>
           <div className="flex w-64 h-16 text-center bg-btn-background justify-around lg:mt-3">
-            <button className="text-2xl uppercase text-sc-typo-color">
+            <button className="text-xl uppercase text-sc-typo-color">
               <Link to={whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-400 duration-500">
               Contactanos <ion-icon name="logo-whatsapp"></ion-icon>
               </Link>

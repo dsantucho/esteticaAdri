@@ -14,8 +14,8 @@ const BannerHeader = () => {
   };
 
   return (
-    <div className="bg-sc-background flex-auto min-w-full lg:h-[400px] lg:items-center lg:flex">
-      <div className="p-7 flex flex-col content-evenly justify-center items-center lg:flex-row-reverse lg:justify-evenly">
+    <div className="bg-sc-background flex-auto min-w-full lg:h-[400px] lg:items-center lg:flex lg:justify-center">
+      <div className="p-7 flex flex-col content-evenly justify-center items-center lg:flex-row-reverse lg:justify-evenly lg:max-w-6xl">
         <div className="relative h-72 w-80 mx-3 lg:hidden">
           <div
             className="h-[230px] w-[250px] absolute left-0 overflow-hidden flex flex-col items-center bg-cover bg-center   lg:h-[330px] lg:w-[350px]"

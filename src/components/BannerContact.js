@@ -24,7 +24,7 @@ const BannerContact = () => {
     const whatsappUrl = `https://wa.me/${phoneNumber}`;
   return (
     <div className=' bg-sc-background flex flex-col items-center mt-4'>
-        <div className='w-[340px] lg:w-3/4'>
+        <div className='w-[340px] lg:w-3/4 lg:max-w-6xl'>
             <h2 className='typo-pathway text-3xl font-normal leading-10 tracking-widest my-4 text-typo-color'>Contacto</h2>
             <div className='flex'>
                 <div className='flex flex-col items-center w-64 h-12 text-center bg-black justify-around mb-5 text-3xl text-white'>

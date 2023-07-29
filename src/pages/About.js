@@ -36,7 +36,7 @@ const About = () => {
           />
           {/* web XL */}
           <img
-            className="sm: hidden md:hidden lg:hidden xl:block p-5 max-h-[500px]"
+            className="sm: hidden md:hidden lg:hidden xl:block p-5 max-h-[375px]"
             src="https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/about%2Fabout-xl.png?alt=media"
             alt="banner"
           />

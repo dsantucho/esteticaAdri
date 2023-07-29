@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 //FORMIK
 import { Formik } from "formik";
 //YUP => crea un esquema de validacion para los campos

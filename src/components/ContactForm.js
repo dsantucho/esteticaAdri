@@ -15,11 +15,20 @@ const yupSchema = yup.object({
 });
 
 const ContactFrom = ({ data }) => {
-
-  const submitHandeler = async (value) => {
+  const submitHandeler = async (value, resetForm) => {
     console.log("submit");
-    console.log(value.name);
+    const auxForm = {
+      name: value.name,
+      phone: value.phone,
+      email: value.email,
+      message: value.message,
+      agreeToTerms: value.agreeToTerms,
+      date: new Date().toLocaleDateString("es-AR"),
+    };
+    console.log(auxForm);
+    resetForm();
   };
+
   return (
     <div className="flex flex-col w-[340px] my-3 lg:w-[400px] lg:h-[550px]">
       <h2 className="typo-pathway text-3xl font-normal leading-10 tracking-widest mt-3 text-typo-color lg:mt-0">
@@ -109,7 +118,8 @@ const ContactFrom = ({ data }) => {
                   className="mr-2"
                 />
                 <label className="text-typo-color text-sm">
-                  Quiero que me llegue informacion sobre promociones y descuentos futuros
+                  Quiero que me llegue informacion sobre promociones y
+                  descuentos futuros
                 </label>
               </div>
             </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 //FORMIK
 import { Formik } from "formik";
 //YUP => crea un esquema de validacion para los campos
@@ -16,6 +16,8 @@ const yupSchema = yup.object({
 });
 
 const ContactFrom = ({ data }) => {
+  const [messageSend, setmessageSend] = useState(false);
+
   const submitHandeler = async (value, resetForm) => {
     console.log("submit");
     const auxForm = {
@@ -31,7 +33,7 @@ const ContactFrom = ({ data }) => {
       method:'POST',
       url: 'https://hook.us1.make.com/ykjrkxbeitugintbskd2ad9a48mnayj8',
       data:{auxForm}
-    }).then(response=>console.log(response)).catch(err=>console.log(err))
+    }).then(response=>console.log(response), setmessageSend(true)).catch(err=>console.log(err))
     resetForm();
   };
 
@@ -129,13 +131,13 @@ const ContactFrom = ({ data }) => {
                 </label>
               </div>
             </div>
-            <div className="my-3 flex  h-16 text-center bg-btn-background justify-around lg:h-12">
+            <div className={`my-3 flex  h-16 text-center justify-around lg:h-12 ${messageSend?'bg-success text-white':' bg-btn-background  text-black '}  `}>
               <button
-                className="text-2xl uppercase text-sc-typo-color lg:text-xl"
+                className="text-2xl uppercase lg:text-xl"
                 type="submit"
                 disabled={!(isValid && dirty)}
               >
-                Enviar Mensaje
+                {(messageSend == false)? "Enviar Mensaje": "Mensaje Enviado" }
               </button>
             </div>
           </form>

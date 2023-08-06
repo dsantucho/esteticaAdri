@@ -13,6 +13,7 @@ module.exports = {
         'background': '#FFFCFC',
         'sc-background': '#FDF2EA',
         'footer-background':'#160601',
+        'success':'#198754',
         'btn-background': '#ECBE8E',
         'typo-color': '#3F2B1E',
         'sc-typo-color': '#0D0D0D',

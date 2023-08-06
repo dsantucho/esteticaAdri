@@ -5,6 +5,19 @@ SASS
 Firebase
 tailwind
 
+##Axios
+Axios is an open source library for making HTTP requests and provides many great features. Let’s have a look at how it works.
+
+#Usage:
+First, you’d need to include Axios. There are two ways to include Axios in your project.
+
+First, you can use npm:
+
+npm install axios --save
+Then you’d need to import it: import axios from 'axios'
+Second, you can include axios using a CDN.
+"<script src="https://unpkg.com/axios/dist/axios.min.js"></script>"
+
 ## Tailwind css
 install:
 npm install -D tailwindcss

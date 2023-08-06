@@ -3,6 +3,7 @@ import React from "react";
 import { Formik } from "formik";
 //YUP => crea un esquema de validacion para los campos
 import * as yup from "yup";
+import axios from 'axios';
 
 //esquema de validacion
 const yupSchema = yup.object({
@@ -26,11 +27,16 @@ const ContactFrom = ({ data }) => {
       date: new Date().toLocaleDateString("es-AR"),
     };
     console.log(auxForm);
+    axios({
+      method:'POST',
+      url: 'https://hook.us1.make.com/ykjrkxbeitugintbskd2ad9a48mnayj8',
+      data:{auxForm}
+    }).then(response=>console.log(response)).catch(err=>console.log(err))
     resetForm();
   };
 
   return (
-    <div className="flex flex-col w-[340px] my-3 lg:w-[400px] lg:h-[550px]">
+    <div className="flex flex-col w-[340px] my-3 lg:w-[400px] lg:h-[600px]">
       <h2 className="typo-pathway text-3xl font-normal leading-10 tracking-widest mt-3 text-typo-color lg:mt-0">
         Dejanos tu mensaje
       </h2>
@@ -100,7 +106,7 @@ const ContactFrom = ({ data }) => {
               <h3 className="font-normal text-lg text-typo-color mt-4">
                 Mensaje
               </h3>
-              <input
+              <textarea
                 className="form-style pt-2 pb-1 bg-sc-background text-sc-typo-color"
                 placeholder="Mensaje"
                 name="message"
@@ -115,7 +121,7 @@ const ContactFrom = ({ data }) => {
                   name="agreeToTerms"
                   checked={values.agreeToTerms}
                   onChange={handleChange}
-                  className="mr-2"
+                  className="mr-2 h-8"
                 />
                 <label className="text-typo-color text-sm">
                   Quiero que me llegue informacion sobre promociones y

@@ -1,3 +1,5 @@
+# Levantar localhost
+yarn start
 # Tech
 REACT JS project 
 react-router-dom

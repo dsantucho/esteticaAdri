@@ -1,85 +1,47 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-//img
+// Imagen del logo
 import navMobileLogo from "../img/nav-mobile-logo2.png";
 
-export default function Navbar() {
-  //menu options
+export default function SimpleNavbar() {
+  // Estado para manejar la apertura/cierre del menú
+  const [open, setOpen] = useState(false);
+
+  // Opciones del menú
   const navigation = [
-    { name: "Home", href: "/", current: false },
-    { name: "Servicios", href: "/services", current: false },
-    { name: "Sobre Nosotros", href: "/about", current: false },
-    { name: "Contacto", href: "/contact", current: false },
+    { name: "Home", href: "/" },
+    { name: "Servicios", href: "/services" },
+    { name: "Sobre Nosotros", href: "/about" },
+    { name: "Contacto", href: "/contact" },
   ];
-  const instagramUrl = "https://www.instagram.com/adriana_aguilar_esteticista/";
-
-  let [open, setOpen] = useState(false);
-
-  const handleLinkClick = () => {
-    setOpen(false);
-  };
-
-  const handleScroll = () => {
-    if (open) {
-      setOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [open]);
-
 
   return (
-    <div className="shadow-md w-full fixed top-0 left-0  bg-background z-50">
-      <div className="flex justify-between pb-4 md:inline fix-max-width">
-        <div className="flex justify-center">
-          <img
-            alt="mobileLogo"
-            src={navMobileLogo}
-            className="object-contain p-2 my-2 flex w-10/12 md:w-96"
-          ></img>
-        </div>
-        <div
-          onClick={() => setOpen(!open)}
-          className="text-2xl absolute right-2 top-14 cursor-pointer md:hidden"
-        >
+    <div className="bg-background shadow-md w-full fixed top-0 left-0 z-50">
+      <div className="flex items-center py-3">
+        {/* Icono del menú (a la izquierda) */}
+        <div className="p-4 text-2xl cursor-pointer md:hidden" onClick={() => setOpen(!open)}>
           <ion-icon name={open ? "close" : "menu"}></ion-icon>
         </div>
 
-        <ul
-          className={`md:h-12 md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:justify-evenly pl-9 md:pl-0 transition-none  bg-background ${
-            open ? "top-32" : "top-[-490px] borderNav"
-          } ${open ? "" : "borderNav"}`}
-        >
-          {navigation.map((navigation) => (
-            <li key={navigation.name} className="md:ml-8 text-base md:my-0 my-7">
-              <Link
-                to={navigation.href}
-                className={`text-nav-typo hover:text-gray-400 duration-500`}
-                onClick={handleLinkClick}
-              >
-                {navigation.name}
+        {/* Logo de la empresa (a la derecha) */}
+        <div className="fix-max-width">
+          <img src={navMobileLogo} alt="mobileLogo" className="object-contain w-full" />
+        </div>
+      </div>
+
+      {/* Menú desplegable */}
+      {open && (
+        <ul className="bg-background p-4">
+          {navigation.map((navItem) => (
+            <li key={navItem.name} className="py-2">
+              <Link to={navItem.href} className="text-nav-typo hover:text-gray-400" onClick={() => setOpen(false)}>
+                {navItem.name}
               </Link>
             </li>
           ))}
-          <li className="text-2xl pt-1.5">
-            <Link
-              to={instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-800 hover:text-gray-400 duration-500"
-            >
-              <ion-icon name="logo-instagram"></ion-icon>
-            </Link>
-          </li>
         </ul>
-      </div>
+      )}
     </div>
   );
 }

@@ -1,37 +1,68 @@
-*{
-    margin   : 0;
-    padding  : 0;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* Asegura que no se expanda más allá del viewport */
+    overflow-x: hidden;
+    /* Previene el desplazamiento horizontal */
     box-sizing: border-box;
+    /* Manejo consistente de bordes y padding */
 }
 
-.fix-max-width{
-    max-width: 960px;
+.fix-max-width {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-body{
+header.navbar {
+    height: 60px;
+    /* Altura para móviles */
+}
+
+@media (min-width: 768px) {
+    header.navbar {
+        height: 80px;
+        /* Altura para pantallas más grandes */
+    }
+
+    body {
+        padding-top: 80px;
+    }
+}
+
+body {
     padding-top: 120px;
+
     //min 320px
-    @include mobile-2xs{
+    @include mobile-2xs {
         padding-top: 125px;
     }
+
     //min 480
-    @include mobile-xs{
+    @include mobile-xs {
         padding-top: 160px;
     }
+
     //min 576
-    @include tablet-sm{
+    @include tablet-sm {
         padding-top: 180px;
     }
+
     //min 676
-    @include tablet-2sm{
+    @include tablet-2sm {
         padding-top: 200px;
     }
+
     //min 768 y cambia a menu web
-    @include tablet-md{
+    @include tablet-md {
         padding-top: 190px;
     }
+
     //min 992
-    @include tablet-lg{
+    @include tablet-lg {
         padding-top: 190px;
     }
 }

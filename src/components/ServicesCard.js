@@ -20,7 +20,7 @@ const ServicesCard = ({ data }) => {
         onClick={handleClick}
       >
         <div className="lg:flex lg:items-center">
-          <h2 className="text-center text-xl font-light leading-6 text-white lg:text-lg lg:align-middle">
+          <h2 className="text-center text-lg font-light leading-6 text-white lg:text-lg lg:align-middle">
             {data.name}{" "}
           </h2>
         </div>

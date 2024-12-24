@@ -41,12 +41,12 @@ const BannerContact = () => {
 
             <div className='flex justify-between'>
                 <div className='flex flex-col w-1/2'>
-                    <h3 className='font-semibold text-xl leading-6 text-typo-color'>Contacto</h3>
-                    <p className='font-light text-sm'> +589 98989898</p>
+                    <h3 className='font-semibold text-lg leading-6 text-typo-color'>Contacto</h3>
+                    <p className='font-light text-sm'> +598 99262217</p>
                 </div>
                 <div className='flex flex-col w-1/2'>
-                    <h3 className='font-semibold text-xl leading-6 text-typo-color'>Direccion</h3>
-                    <p className='font-light text-sm'>Montevideo, Carrasco, Calle 12345</p>
+                    <h3 className='font-semibold text-lg leading-6 text-typo-color'>Direccion</h3>
+                    <p className='font-light text-sm'>Montevideo, Carrasco, Ramblas Tomas Berreta 888</p>
                 </div>
             </div>
             <div className='lg:flex '>

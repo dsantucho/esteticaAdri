@@ -13,7 +13,7 @@ const BannerAbout = () => {
         </div>
         <div className=' lg:border-l-4 lg:border-sc-background '>
           <div className='flex flex-col py-2 w-[340px] '>
-              <h2 className='typo-pathway font-normal text-2xl leading-8 tracking-wider text-typo-color lg:pl-5 lg:text-3xl'>Sobre Estetica Integral - Adriana Aguilar</h2>
+              <h2 className='typo-pathway font-normal text-3xl leading-8 tracking-wider text-typo-color lg:pl-5 lg:text-3xl'>Sobre Estetica Integral - Adriana Aguilar</h2>
               <p className='text-l font-light leading-9 tracking-wide my-4 lg:pl-5'>Con más de 10 años de experiencia, ofrecemos tratamientos estéticos de alta calidad y personalizados para hombres y mujeres. Estamos a la vanguardia de las últimas tendencias y técnicas, con capacitación en el extranjero para ofrecer servicios de calidad internacional. Disfruta de una amplia variedad de servicios en nuestro oasis de belleza y bienestar.</p>
           </div>
           <div className='flex w-64 h-12 text-center bg-btn-background justify-around mb-5 lg:ml-5'>

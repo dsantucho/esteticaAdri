@@ -6,15 +6,18 @@ const BannerTreatments = () => {
     const phoneNumber = '+59899262217'; 
     const whatsappUrl = `https://wa.me/${phoneNumber}`;
     const treatments = [
-        {name: 'EMSculpt', img:{backgroundImage:'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/treatments%2Fsculptx1.png?alt=media")'}, href: '#', description: 'EMSculpt es un tratamiento único que esculpe su cuerpo disminuyendo la grasa difícil de quemar a la vez que gana masa muscular. Es indoloro, muy eficaz y seguro.'},
-        {name: 'Depilacion Laser Diodo', img:{backgroundImage:'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/treatments%2Fdepix1.png?alt=media")'}, href: '#', description:'Nuestro equipo está diseñado tanto para hombres como para mujeres, para abordar cualquier área de preocupación en su cara o cuerpo utilizando la última tecnología láser.'},
-        {name: 'Hifu - Facial & Corporal',img:{backgroundImage:'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/treatments%2Fhifux1.png?alt=media")'}, href: '#', description: 'The point of using Lorem Ipsum hiter that using making it look like others readable will get end.'}
+        {name: 'EMSculpt', img:{backgroundImage:'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/treatments%2Fsculptx1.png?alt=media")'}, href: '#', description: 'EMSculpt combina tecnología avanzada para esculpir tu cuerpo, eliminando grasa localizada mientras tonifica y aumenta la masa muscular. Ideal para quienes buscan resultados visibles sin esfuerzo físico excesivo. Totalmente indoloro, rápido y seguro, es el aliado perfecto para transformar tu figura.'},
+        {name: 'Depilación Láser Diodo', img:{backgroundImage:'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/treatments%2Fdepix1.png?alt=media")'}, href: '#', description:'Elimina el vello de manera rápida, efectiva y duradera con nuestra tecnología láser de última generación. Diseñada para hombres y mujeres, es ideal para tratar cualquier área del rostro o cuerpo con total seguridad y comodidad. Perfecta para quienes buscan resultados visibles desde las primeras sesiones, sin dolor ni tiempo de recuperación.'},
+        {name: 'Hifu - Facial & Corporal',img:{backgroundImage:'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/treatments%2Fhifux1.png?alt=media")'}, href: '#', description: 'Redefine tu rostro y esculpe tu cuerpo con la tecnología HIFU, un tratamiento no invasivo que actúa en profundidad para rejuvenecer la piel, estimular la producción de colágeno y eliminar grasa localizada. Ideal para quienes buscan tensar la piel del rostro, reducir arrugas o tonificar áreas como abdomen y muslos. Seguro y con resultados visibles desde las primeras sesiones.'}
     ]
 
 
   return (
     <div className='flex flex-col min-w-full my-5 items-center '>
-        <h2 className='banner-services-h2 p-5 text-center text-2xl leading-8 tracking-wider text-typo-color lg:text-3xl lg:text-left'>Los tratamientos estéticos más efectivos con nuestras 3 máquinas favoritas</h2>
+        <h2 className='banner-services-h2 p-5 text-center text-3xl leading-8 tracking-wider text-typo-color lg:text-3xl lg:text-left'>
+            {/* Los tratamientos estéticos más efectivos con nuestras 3 máquinas favoritas */}
+            Resultados que transforman: Nuestras 3 tecnologías favoritas
+        </h2>
         <div className='flex flex-col items-center lg:flex-row lg:items-start lg:justify-evenly w-full lg:max-w-6xl'>
             {
                 treatments.map((treatment) => (

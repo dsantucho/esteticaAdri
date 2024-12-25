@@ -27,8 +27,8 @@ const BannerFooter = () => {
               <span className='font-light text-sm tracking-wider my-1'>Contacto</span>
 
               <h2 className='text-2xl font-bold leading-8 tracking-wider mt-3 mb-1'>Contactos</h2>
-              <span className='font-light text-sm tracking-wider my-1'>Direccion: 1234 Carrasco, Montevideo</span>
-              <span className='font-light text-sm tracking-wider my-1'>Whatsapp: +589 94943434</span>
+              <span className='font-light text-sm tracking-wider my-1'>Direccion: Ramblas Tomas Berreta 888, Montevideo, Carrasco. </span>
+              <span className='font-light text-sm tracking-wider my-1'>Whatsapp: +598 99262217</span>
 
                   <div className='flex my-1'>
                     <div className='flex flex-col items-center text-center justify-around text-3xl text-white'>

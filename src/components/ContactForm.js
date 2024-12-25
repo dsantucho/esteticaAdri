@@ -1,39 +1,44 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 //FORMIK
 import { Formik } from "formik";
 //YUP => crea un esquema de validacion para los campos
 import * as yup from "yup";
-import axios from 'axios';
 
 //esquema de validacion
 const yupSchema = yup.object({
-  name: yup.string().min(3).max(60).required("Name is required"),
-  phone: yup.string().required("Phone is required"),
-  email: yup.string().email("Invalid email").required("Email is required"),
-  message: yup.string().min(3),
-  //boolean field for the checkbox, which is required to be checked
+  name: yup.string().min(3).max(60).required("El nombre es requerido"),
+  phone: yup.string().required("El telefono es requerido"),
+  message: yup.string().min(3).required("El mensaje es requerido"),
+  // boolean field for the checkbox
   agreeToTerms: yup.boolean(),
 });
 
 const ContactFrom = ({ data }) => {
   const [messageSend, setmessageSend] = useState(false);
 
-  const submitHandeler = async (value, resetForm) => {
+  const submitHandeler = (value, resetForm) => {
     console.log("submit");
-    const auxForm = {
-      name: value.name,
-      phone: value.phone,
-      email: value.email,
-      message: value.message,
-      agreeToTerms: value.agreeToTerms,
-      date: new Date().toLocaleDateString("es-AR"),
-    };
-    console.log(auxForm);
-    axios({
-      method:'POST',
-      url: 'https://hook.us1.make.com/ykjrkxbeitugintbskd2ad9a48mnayj8',
-      data:{auxForm}
-    }).then(response=>console.log(response), setmessageSend(true)).catch(err=>console.log(err))
+
+    // Construye el mensaje para WhatsApp
+    const whatsappMessage = `
+      **Este es un mensaje auto-generado con tus datos** 
+      Nombre: ${value.name}
+      Celular: ${value.phone}
+      Mensaje: ${value.message}
+      Quiero que me llegue información de promos: ${value.agreeToTerms ? "Sí" : "No"}
+    `;
+
+    // Número de WhatsApp de Adriana en formato internacional
+    const whatsappNumber = "+59899262217"; // Cambia este número si es necesario
+
+    // Crea el enlace dinámico
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    // Redirige a WhatsApp
+    window.open(whatsappUrl, "_blank");
+
+    // Marca como enviado y limpia el formulario
+    setmessageSend(true);
     resetForm();
   };
 
@@ -46,7 +51,6 @@ const ContactFrom = ({ data }) => {
         initialValues={{
           name: "",
           phone: "",
-          email: "",
           message: "",
           agreeToTerms: false,
         }}
@@ -61,7 +65,6 @@ const ContactFrom = ({ data }) => {
           handleSubmit,
           isValid,
           dirty,
-          ErrorMessage,
         }) => (
           <form className="" onSubmit={handleSubmit}>
             <div className="flex flex-col my-3 lg:my-1">
@@ -92,7 +95,8 @@ const ContactFrom = ({ data }) => {
                 <span className="form-error text-xs py-1">{errors.phone}</span>
               )}
 
-              <h3 className="font-normal text-lg text-typo-color mt-4">
+              {/* Comento el campo de email ya que no se está utilizando */}
+              {/* <h3 className="font-normal text-lg text-typo-color mt-4">
                 Email
               </h3>
               <input
@@ -104,7 +108,8 @@ const ContactFrom = ({ data }) => {
               />
               {errors.email && (
                 <span className="form-error text-xs py-1">{errors.email}</span>
-              )}
+              )} */}
+
               <h3 className="font-normal text-lg text-typo-color mt-4">
                 Mensaje
               </h3>
@@ -115,6 +120,9 @@ const ContactFrom = ({ data }) => {
                 value={values.message}
                 onChange={handleChange}
               />
+              {errors.message && (
+                <span className="form-error text-xs py-1">{errors.message}</span>
+              )}
             </div>
             <div>
               <div className="flex items-center mt-2">
@@ -131,13 +139,19 @@ const ContactFrom = ({ data }) => {
                 </label>
               </div>
             </div>
-            <div className={`my-3 flex  h-16 text-center justify-around lg:h-12 ${messageSend?'bg-success text-white':' bg-btn-background  text-black '}  `}>
+            <div
+              className={`my-3 flex h-16 text-center justify-around lg:h-12 ${
+                messageSend
+                  ? "bg-success text-white"
+                  : " bg-btn-background  text-black "
+              }`}
+            >
               <button
                 className="text-2xl uppercase lg:text-xl"
                 type="submit"
                 disabled={!(isValid && dirty)}
               >
-                {(messageSend == false)? "Enviar Mensaje": "Mensaje Enviado" }
+                {messageSend === false ? "Enviar Mensaje" : "Mensaje Enviado"}
               </button>
             </div>
           </form>

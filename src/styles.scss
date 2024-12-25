@@ -1,13 +1,12 @@
 //utils
-@import "./sass/utils/variables";
-@import "./sass/utils/mixin";
-@import "./sass/utils/typography";
+@forward "./sass/utils/mixin";
+@forward "./sass/utils/typography";
 //base
-@import "./sass/base/base" ;
+@forward "./sass/base/base" ;
 //components
-@import "./sass/components/navBar";
-@import "./sass/components/banners";
-@import "./sass/components/buttons";
-@import "./sass/components/cards";
-@import "./sass/components/form";
-@import "./sass/components/footer";
+@forward "./sass/components/navBar";
+@forward "./sass/components/banners";
+@forward "./sass/components/buttons";
+@forward "./sass/components/cards";
+@forward "./sass/components/form";
+@forward "./sass/components/footer";

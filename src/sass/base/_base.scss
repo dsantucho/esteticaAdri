@@ -14,8 +14,8 @@ body {
 .fix-max-width {
     max-width: 100%;
     margin: 0 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
 }
 
 header.navbar {
@@ -39,7 +39,7 @@ body {
 
     //min 320px
     @include mobile-2xs {
-        padding-top: 125px;
+        padding-top: 90px;
     }
 
     //min 480
@@ -66,4 +66,16 @@ body {
     @include tablet-lg {
         padding-top: 190px;
     }
+
+    @include web-xsm{
+        padding-top: 90px;
+    }
+    @include web-sm{
+        padding-top: 90px;
+    }
+    @include web-lg{
+        padding-top: 90px;
+    }
+
+
 }

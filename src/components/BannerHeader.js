@@ -17,8 +17,8 @@ const BannerHeader = () => {
   const ctaBannerHeader = 'Reserva tu consulta ahora';
   const disclaimerBannerHeader = '* Consulta inicial gratuita. ¡Escríbenos!';
   return (
-    <div className="bg-sc-background w-screen flex-auto lg:h-[400px] lg:items-center lg:flex lg:justify-center overflow-x-hidden">
-      <div className="px-7 pt-7 flex flex-col content-evenly justify-center items-center lg:flex-row-reverse lg:justify-evenly lg:max-w-6xl">
+    <div className="bg-sc-background w-screen flex-auto lg:items-center lg:flex-col lg:justify-center lg:px-32 lg:py-2 overflow-x-hidden">
+      <div className="px-7 pt-7 flex flex-col content-evenly justify-center items-center lg:flex-row-reverse lg:justify-evenly lg:max-w-6xl lg:px-0 lg:pt-0">
         {/* Imagen mobile */}
         <div className="relative h-72 w-80 mx-3 lg:hidden">
           <div
@@ -62,7 +62,7 @@ const BannerHeader = () => {
         </div>
       </div>
       {/* Disclaimer */}
-      <div className="px-7 py-3">
+      <div className="px-7 py-3 lg: flex">
         <text className="text-sm antialiased font-light tracking-wide leading-7 align-middle text-sc-typo-color">{disclaimerBannerHeader}</text>
       </div>
     </div>

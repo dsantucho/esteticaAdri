@@ -22,20 +22,20 @@ function App() {
     <ServiceProvider>
       <Router>
         <div className="max-w-screen overflow-x-hidden">
-          <header className="bg-background max-w-screen overflow-x-hidden">
+          <header className="bg-background max-w-screen overflow-x-hidden ">
             <Navbar />
           </header>
           <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-          <footer>
-            <BannerFooter />
-            <Copyright />
-          </footer>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+            <footer>
+              <BannerFooter />
+              <Copyright />
+            </footer>
           </main>
         </div>
       </Router>

@@ -14,11 +14,11 @@ const BannerServices = () => {
     const sortedServices = services.sort((a, b) => a.type - b.type);
 
   return (
-    <div className='flex flex-col min-w-full my-5 lg:max-w-5xl'>
+    <div className='flex flex-col min-w-full my-5 lg:max-w-5xl lg:px-32 lg:py-2'>
             <div className='lg:hidden flex flex-row justify-center'>
                 <h2 className='banner-services-h2 py-5 text-center text-3xl leading-8 tracking-wider text-typo-color '>Descubrí nuestros servicios</h2>
             </div>
-            <div className='hidden lg:flex lg:flex-row lg:justify-start lg:max-w-5xl lg:ml-10 xl:ml-20 2xl:ml-40'>
+            <div className='hidden lg:flex lg:flex-row lg:justify-start lg:max-w-5xl'>
                 <h2 className='banner-services-h2 py-5 leading-8 tracking-wider text-typo-color text-3xl text-left'>Descubrí nuestros servicios</h2>
             </div>
             

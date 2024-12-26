@@ -13,26 +13,29 @@ const BannerTreatments = () => {
 
 
   return (
-    <div className='flex flex-col min-w-full my-5 items-center '>
-        <h2 className='banner-services-h2 p-5 text-center text-3xl leading-8 tracking-wider text-typo-color lg:text-3xl lg:text-left'>
-            {/* Los tratamientos estéticos más efectivos con nuestras 3 máquinas favoritas */}
-            Resultados que transforman: Nuestras 3 tecnologías favoritas
-        </h2>
-        <div className='flex flex-col items-center lg:flex-row lg:items-start lg:justify-evenly w-full lg:max-w-6xl'>
-            {
-                treatments.map((treatment) => (
-                    <TreatmentsCard data = {treatment} key={treatment.name}/>
-                ))
-            }
-        </div>
-        <div className='flex w-64 h-16 text-center bg-btn-background justify-around' >
-            <button className='text-2xl uppercase text-sc-typo-color'>
-                <Link to={whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-400 duration-500">
-                    Contactanos <ion-icon name="logo-whatsapp"></ion-icon>
-                </Link>
-            </button>
-        </div>
+    <div className='flex flex-col min-w-full my-5 items-center lg:px-32 lg:py-2'>
+    <h2 className='banner-services-h2 p-5 text-center text-3xl leading-8 tracking-wider text-typo-color lg:text-3xl lg:text-left'>
+        Resultados que transforman: Nuestras 3 tecnologías favoritas
+    </h2>
+    <div className='flex flex-col items-center lg:flex-row lg:items-stretch lg:justify-evenly w-full lg:max-w-6xl gap-5'>
+        {treatments.map((treatment) => (
+            <TreatmentsCard data={treatment} key={treatment.name} />
+        ))}
     </div>
+    <div className='flex w-64 h-16 text-center bg-btn-background justify-around'>
+        <button className='text-2xl uppercase text-sc-typo-color'>
+            <Link
+                to={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className='text-gray-800 hover:text-gray-400 duration-500'
+            >
+                Contactanos <ion-icon name="logo-whatsapp"></ion-icon>
+            </Link>
+        </button>
+    </div>
+</div>
+
   )
 }
 

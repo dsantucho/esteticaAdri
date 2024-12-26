@@ -16,14 +16,14 @@ const BannerProducts = () => {
   };
   const TitleBannerProducts = `Tecnología y productos que marcan la diferencia`;
   return (
-    <div className="flex-auto min-w-full my-5 bg-sc-background">
+    <div className="flex-auto min-w-full my-5 bg-sc-background lg:px-32 lg:py-2">
       <div className="lg:hidden flex flex-row justify-center">
         <h2 className=" banner-services-h2 py-5 text-center text-3xl leading-8 tracking-wider text-typo-color">
           {/* Nuestros productos <br /> &amp; <br /> Tecnologías */}
           {TitleBannerProducts}
         </h2>
       </div>
-      <div className="hidden lg:flex lg:flex-row lg:justify-start lg:max-w-5xl lg:ml-10 xl:ml-20 2xl:ml-40">
+      <div className="hidden lg:flex lg:flex-row lg:justify-start lg:max-w-5xl ">
         <h2 className="banner-services-h2 py-5 text-3xl leading-8 tracking-wider text-typo-color text-left">
         Tecnología &amp; productos que marcan la diferencia
         </h2>

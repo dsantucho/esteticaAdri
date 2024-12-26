@@ -5,7 +5,7 @@ const BannerAbout = () => {
     backgroundImage: 'url("https://firebasestorage.googleapis.com/v0/b/estetica-adriana-aguilar.appspot.com/o/about%2Fphoto-about.jpg?alt=media")'
 };
   return (
-    <div className='flex flex-col items-center my-4 lg:flex-row lg:justify-center'>
+    <div className='flex flex-col items-center my-4 lg:flex-row lg:justify-center lg:px-32 lg:py-2'>
         <div className='aboutBox my-4 lg:hidden'></div>
         <div className='sm:hidden md: hidden lg:block lg:pr-10'>
           <div className='w-[440px] h-[550px] overflow-hidden flex items-center bg-cover bg-center my-6'

@@ -7,7 +7,7 @@ const CardTreatmentDetail = ({ treatmentData }) => {
   };
 
   return (
-    <div className="flex flex-col max-w-md bg-white rounded-md shadow-md overflow-hidden m-2 lg:max-w-none ">
+    <div className="flex flex-col max-w-md bg-white rounded-lg shadow-md overflow-hidden m-2 lg:max-w-none ">
       <div className="p-4 min-w-[300px] min-h-[404px] flex flex-col lg:flex-row lg:min-h-0">
         {/* div imagen */}
         <div
@@ -18,10 +18,10 @@ const CardTreatmentDetail = ({ treatmentData }) => {
         <div className="lg:flex lg:flex-col ">
           {/* tags H/M */}
           <div className="flex flex-row my-4 lg:mb-4 lg:mt-0">
-            <span className="mr-2 bg-typo-color p-2 rounded-lg text-white text-base text-center align-middle">
+            <span className="mr-2 bg-[#65554B] p-2 rounded-lg text-white text-base text-center align-middle">
               Hombre
             </span>
-            <span className="bg-tag-mujer p-2 rounded-lg text-black text-base text-center align-middle">
+            <span className="bg-sc-background p-2 rounded-lg text-black text-base text-center align-middle">
               Mujer
             </span>
           </div>
@@ -39,9 +39,12 @@ const CardTreatmentDetail = ({ treatmentData }) => {
                   <p>{treatmentData.descriptionFull}</p>
                 </div>
                 <div className="">
-                  <p>
-                    <strong>Beneficios: </strong> {treatmentData.advantage}
-                  </p>
+                  <strong>Beneficios:</strong>
+                  <ul className="list-disc ml-5">
+                    {treatmentData.advantage.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
               <p className="mt-3">
@@ -53,9 +56,14 @@ const CardTreatmentDetail = ({ treatmentData }) => {
           {isExpanded && (
             <div className="">
               <p>{treatmentData.descriptionFull}</p>
-              <p>
-                <strong>Beneficios: </strong> {treatmentData.advantage}
-              </p>
+              <div className="">
+                  <strong>Beneficios:</strong>
+                  <ul className="list-disc ml-5">
+                    {treatmentData.advantage.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
               <p>
                 <strong>Tiempo Estimado: </strong>
                 {treatmentData.time}
@@ -66,7 +74,7 @@ const CardTreatmentDetail = ({ treatmentData }) => {
       </div>
       {/* div de boton read more */}
       <div className="px-4 py-2 bg-gray-100 text-end lg:hidden">
-        <button className="font-medium" onClick={handleToggle}>
+        <button className="font-medium " onClick={handleToggle}>
           {isExpanded ? "Mostrar menos" : "Mostrar más"}
         </button>
       </div>

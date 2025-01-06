@@ -11,7 +11,7 @@ const CardTreatmentDetail = ({ treatmentData }) => {
       <div className="p-4 min-w-[300px] min-h-[404px] flex flex-col lg:flex-row lg:min-h-0">
         {/* div imagen */}
         <div
-          className="rounded-md overflow-hidden flex flex-col items-center bg-cover bg-center h-[200px] lg:w-[100%] lg:h-auto lg:mr-4 2xl:max-w-sm"
+          className="rounded-md overflow-hidden flex flex-col items-center bg-cover bg-center h-[200px] lg:max-w-[50%] lg:min-w-[33%] lg:h-auto lg:mr-4 2xl:max-w-sm"
           style={treatmentData.img}
         ></div>
         {/* div de info */}
@@ -35,10 +35,10 @@ const CardTreatmentDetail = ({ treatmentData }) => {
               </div>
               {/* info > 1024 lg */}
               <div className=" hidden lg:mt-2 lg:flex lg:flex-row ">
-                <div className=" mr-2">
+                <div className=" mr-2 w-1/2">
                   <p>{treatmentData.descriptionFull}</p>
                 </div>
-                <div className="">
+                <div className="w-1/2">
                   <strong>Beneficios:</strong>
                   <ul className="list-disc ml-5">
                     {treatmentData.advantage.map((item, index) => (

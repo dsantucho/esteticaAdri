@@ -152,7 +152,7 @@ const Services = () => {
       },
       time: 'Variable según la zona.',
       descriptionResume: 'Un método clásico y eficaz para eliminar el vello desde la raíz, dejando la piel suave y libre de vello durante semanas. Utilizamos cera de alta calidad para minimizar molestias.',
-      descriptionFull: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae felis eget ante laoreet luctus. Nulla ac neque quis eros iaculis condimentum non eget orci. Quisque hendrerit ligula idconsequat vulputate.',
+      descriptionFull: 'Un método clásico y eficaz para eliminar el vello desde la raíz, dejando la piel suave y libre de vello durante semanas. Utilizamos cera de alta calidad para minimizar molestias.',
       advantage: [
         'Resultados inmediatos y duraderos.',
         'Piel suave al tacto.',
